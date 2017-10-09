@@ -10,6 +10,6 @@ module.exports = function getHTML(options, callback) {
 
     response.on('end', function() {
       console.log('Response stsream complete.')
-    })
+    });
   });
 };
