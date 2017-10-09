@@ -7,9 +7,7 @@ function getHTML (options, callback) {
     response.setEncoding('utf8');
 
     response.on('data', function(data) {
-      var recievedData;
-      recievedData += data;
-
+      data += data;
       callback(data);
     });
 
